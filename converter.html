@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="converter.css">
+        <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> 
+        <title></title>
+    </head>
+    <body>
+        <p id="title"><u>CURRENCY CONVERTOR</u></p>
+        
+        <br><br>
+        
+        <p id="des">Description-</p>
+        
+        <br></br>
+        
+        <p id="des1">An efficient and accurate convertor for Rupees, Dollars and Pounds currencies.</p>
+        
+        <br></br>
+        
+        <select class="" name="" id="c1">
+            <option value="R" id="opt1">Rupees</option>
+            <option value="D" id="opt2">Dollars</option>
+            <option value="P" id="opt3">Pounds</option>
+        </select>
+
+        <select class="" name="" id="c2">
+            <option value="R">Rupees</option>
+            <option value="D">Dollars</option>
+            <option value="P">Pounds</option>
+        </select>
+
+        <br><br>
+        
+        <input type="text" name="" value="" id="i1">
+        
+        <label for=""> == </label>
+        
+        <input type="text" name="" value="" id="i2">
+        
+        <br><br>
+
+        <button type="button" name="button" onclick="clicked()" id="but"> Click </button>
+        
+        <br><br>
+
+        <script type="text/javascript">
+            function clicked(){
+                var s1, s2, i1, i2;
+                s1 = document.getElementById("c1").value;
+                s2 = document.getElementById("c2").value;
+                i1 = document.getElementById("i1").value;
+                if(s1 == "R"){
+                    switch(s2){
+                        case 'R':
+                            document.getElementById('i2').value = 1 * Number(i1);
+                            break;
+                        case 'D':
+                            document.getElementById('i2').value = Number(i1) / 65.36;
+                            break;
+                        case 'P':
+                            document.getElementById('i2').value = Number(i1) /85.98;
+                            break;
+                    }
+                }
+                if(s1 == "D"){
+                    switch(s2){
+                        case 'R':
+                            document.getElementById('i2').value = Number(i1) * 65.36;
+                            break;
+                        case 'D':
+                            document.getElementById('i2').value = 1 * Number(i1);
+                            break;
+                        case 'P':
+                            document.getElementById('i2').value = 80 * Number(i1) / 65.36;
+                            break;
+                    } 
+                }
+                if(s1 == "P"){
+                    switch(s2){
+                        case 'R':
+                            document.getElementById('i2').value = Number(i1) * 85.98;
+                            break;
+                        case 'D':
+                            document.getElementById('i2').value = 70 * Number(i1) / 85.98;
+                            break;
+                        case 'P':
+                            document.getElementById('i2').value = 1 * Number(i1);
+                            break;
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

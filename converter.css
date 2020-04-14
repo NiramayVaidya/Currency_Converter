@@ -1,0 +1,42 @@
+#title {
+    font-family: 'Vollkorn SC', serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #040f68;
+    background-color: white;
+    text-align: left;
+    line-height: 0.1;
+}
+
+#des {
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    font-size: 28px;
+    color: #071ab5;
+    background-color: white;
+    text-align: left;
+    line-height: 0.1;
+}
+#des1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #797fb7;
+    background-color: white;
+    line-height: 0.1;
+}
+#but {
+    font-family: 'Cinzel', serif;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+}
+#i1, #i2 {
+    font-family: 'Cinzel', serif;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+}
+    
